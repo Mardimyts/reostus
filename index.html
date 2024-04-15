@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vahemaa Ülemiste järvest</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <h1 class="main-title">Reostuse Leviku Interaktiivne Kaart</h1>
+    <div id="map" style="width: 100%; height: 500px;"></div>
+    <div id="output"><b>Vahemaa: </b></div>
+    <p>Jõe vee liikumiskiirus (m/s): <span id="speed">0.75</span></p>
+    <p>Reostuse jõudmise aeg järveni: <span id="time">0</span> h <span id="minutes">0</span> min</p>
+    <button id="toggleTrajectory">Kuva trajektoor</button>
+    <div id="footer">
+        <b>Abi.</b> Kuidas kasutada rakendust?
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="markerpoints.js"></script>
+    <script src="riverpoints.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
